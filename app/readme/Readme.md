@@ -82,13 +82,14 @@ Output:
 ```
 
 When we change numMax = 1000000
+
 Output:
 ```dart
 15:48:49.391 CoroutinesPractice I Create 1000000 coroutines in 33496
 16:05:27.310 CoroutinesPractice I Create 1000000 thread in 564799
 ```
 
-###Memory usage comparison between Coroutine and Thread 
+### Memory usage comparison between Coroutine and Thread 
 * Each thread has its own stack, typically 1MB in size. 64k is the least amount of stack space allowed per thread in the JVM
 
 * A simple coroutine in Kotlin occupies only a few dozen bytes of heap memory.
